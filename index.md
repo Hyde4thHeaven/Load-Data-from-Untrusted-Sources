@@ -8,10 +8,9 @@ Today I will dig down to something more advance. I believed you guy must have ex
 YAML *(a recursive acronym for "YAML Ain't Markup Language")* is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. YAML targets many of the same communications applications as Extensible Markup Language but has a minimal syntax which intentionally differs from SGML.  
 
 ### Basic samples of YAML  
-YAML offers an "in-line" style for denoting associative arrays and lists. Here is a sample of the components.  
-Conventional block format uses a hyphen+space to begin a new item in list.  
-> --- # Character Stats for RPG Game  
-> - Hero: &char001  
+YAML offers an "in-line" style for denoting associative arrays and lists. Here is a sample of the components. Conventional block format uses a hyphen+space to begin a new item in list.  
+> \--- # Character Stats for RPG Game  
+> \- Hero: &char001  
 >     Name:     HydeHeaven  
 >     Level:    99  
 >     Attack:   777  
