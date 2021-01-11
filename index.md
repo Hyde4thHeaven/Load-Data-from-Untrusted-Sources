@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+## Welcome to 3rd episode of my series **Code for Security**.  
 
-You can use the [editor on GitHub](https://github.com/Hyde4thHeaven/Load-Data-from-Untrusted-Sources/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<div align="center"> <img src="cover.png"/> </div>  
+  
+Today I will dig down to something more advance. I believed you guy must have experience in loading the data from sources. For many types of data that could help your program have a great work, **YAML** is the one of most famous data type. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## What is YAML?
+YAML *(a recursive acronym for "YAML Ain't Markup Language")* is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. YAML targets many of the same communications applications as Extensible Markup Language but has a minimal syntax which intentionally differs from SGML.  
 
-### Markdown
+### Basic samples of YAML  
+YAML offers an "in-line" style for denoting associative arrays and lists. Here is a sample of the components.  
+Conventional block format uses a hyphen+space to begin a new item in list.  
+> --- # Character Stats for RPG Game
+> - Hero: &char001
+>     Name:     HydeHeaven
+>     Level:    99
+>     Attack:   777
+>     Defend:   777
+>     Speed:    777
+  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  
+## Solution
 
-```markdown
-Syntax highlighted code block
+  
+**Another secure function is done!** Secured coding is just a flipped hand when you know the hint!
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Hyde4thHeaven/Load-Data-from-Untrusted-Sources/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Let's hunt more vulnerable code to make **Code for Security** next episode. Stay tuned!  
+  
+**#LoadDataFromUntrustedSources #Code4Sec**  
+  
+______________________________
+<table border="0">
+ <tr>
+   <td> <h3><i>Although my profile picture is quiet, but the real me can make some noise.</i></h3>
+      <hr>
+      <b><font color="Blue"> Author: Vuttawat Uyanont </font></b>  <br>
+      <font color="grey"><i>Sexiest former engineer & banker who interested in Tech, Sake, and Beer.</i></font>  <br>
+      <b>Studying:</b> Master Computer Science in Cybersecurity Management at Mahanakorn University.  <br> </td>  
+   <td><img src="Author.png" width="150"/></td>  
+ </tr>
+</table>
+  
