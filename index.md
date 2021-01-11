@@ -10,13 +10,13 @@ YAML *(a recursive acronym for "YAML Ain't Markup Language")* is a human-readabl
 ### Basic samples of YAML  
 YAML offers an "in-line" style for denoting associative arrays and lists. Here is a sample of the components.  
 Conventional block format uses a hyphen+space to begin a new item in list.  
-> --- # Character Stats for RPG Game
-> - Hero: &char001
->     Name:     HydeHeaven
->     Level:    99
->     Attack:   777
->     Defend:   777
->     Speed:    777
+> --- # Character Stats for RPG Game  
+> - Hero: &char001  
+>     Name:     HydeHeaven  
+>     Level:    99  
+>     Attack:   777  
+>     Defend:   777  
+>     Speed:    777  
   
 
   
