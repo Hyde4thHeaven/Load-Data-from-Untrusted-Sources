@@ -5,7 +5,7 @@
 Today I will dig down to something more advance. I believed you guys must have experience in loading the data from sources. For many types of data that could help your program have great work, yaml.load() is the one of most famous data-loader functions.
   
 ## yaml.load()
-### Basic samples of yaml.load()  
+> Basic samples of yaml.load()  
 <div align="center"> <img src="yaml.png"/> </div> 
 Default yaml.load() is FullLoader, that's mean its load and do everything the file order the code to do. This is cause vulnerable that let's the untrusted sources input arbitrary Python objects and leads to arbitrary code execution like this:  
 > - !!python/object/new:str
