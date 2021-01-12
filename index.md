@@ -2,25 +2,23 @@
 
 <div align="center"> <img src="cover.png"/> </div>  
   
-Today I will dig down to something more advance. I believed you guy must have experience in loading the data from sources. For many types of data that could help your program have a great work, **YAML** is the one of most famous data type. 
-
-## What is YAML?
-YAML *(a recursive acronym for "YAML Ain't Markup Language")* is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. YAML targets many of the same communications applications as Extensible Markup Language but has a minimal syntax which intentionally differs from SGML.  
-
-### Basic samples of YAML  
-YAML offers an "in-line" style for denoting associative arrays and lists. Here is a sample of the components. Conventional block format uses a hyphen+space to begin a new item in list.  
-> \--- # Character Stats for RPG Game  
-> \- Hero: &char001  
->     Name:     HydeHeaven  
->     Level:    99  
->     Attack:   777  
->     Defend:   777  
->     Speed:    777  
+Today I will dig down to something more advance. I believed you guy must have experience in loading the data from sources. For many types of data that could help your program have a great work, **yaml.load()** is the one of most famous data-loader function.  
   
-
+## yaml.load()
+### Basic samples of yaml.load()  
+<div align="center"> <img src="yaml.png"/> </div> 
+Default yaml.load() is FullLoader, that's mean its load and do everything the file order the code to do. This is cause vulnerable that let's the untrusted sources input arbitrary Python objects and leads to arbitrary code execution like this:  
+> - !!python/object/new:str
+>     args: []
+>     state: !!python/tuple
+>     - "RCE_HERE"
+>     - !!python/object/new:staticmethod
+>       args: [0]
+>       state:
+>         update: !!python/name:exec
   
-## Solution
-
+## Solution - yaml.safe_load()
+While yaml.load() is set its default to FullLoader, **yaml.safe_load()** is set to prevent the code run arbitrary code execution! That's all you need to remember when decide to use yaml load command.
   
 **Another secure function is done!** Secured coding is just a flipped hand when you know the hint!
 
