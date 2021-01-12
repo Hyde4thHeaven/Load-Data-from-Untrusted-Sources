@@ -8,14 +8,14 @@ Today I will dig down to something more advance. I believed you guys must have e
 > Basic samples of yaml.load()  
 <div align="center"> <img src="yaml.png"/> </div> 
 Default yaml.load() is FullLoader, that's mean its load and do everything the file order the code to do. This is cause vulnerable that let's the untrusted sources input arbitrary Python objects and leads to arbitrary code execution like this:  
-> - !!python/object/new:str
->     args: []
->     state: !!python/tuple
->     - "RCE_HERE"
->     - !!python/object/new:staticmethod
->       args: [0]
->       state:
->         update: !!python/name:exec
+> - !!python/object/new:str  
+>     args: []  
+>     state: !!python/tuple  
+>     - "RCE_HERE"  
+>     - !!python/object/new:staticmethod  
+>       args: [0]  
+>       state:  
+>         update: !!python/name:exec  
   
 ## Solution - yaml.safe_load()
 While yaml.load() is set its default to FullLoader, **yaml.safe_load()** is set to prevent the code run arbitrary code execution! That's all you need to remember when deciding to use yaml load command.
