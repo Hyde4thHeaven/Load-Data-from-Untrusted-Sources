@@ -2,7 +2,7 @@
 
 <div align="center"> <img src="cover.png"/> </div>  
   
-Today I will dig down to something more advance. I believed you guy must have experience in loading the data from sources. For many types of data that could help your program have a great work, **yaml.load()** is the one of most famous data-loader function.  
+Today I will dig down to something more advance. I believed you guys must have experience in loading the data from sources. For many types of data that could help your program have great work, yaml.load() is the one of most famous data-loader functions.
   
 ## yaml.load()
 ### Basic samples of yaml.load()  
@@ -18,7 +18,7 @@ Default yaml.load() is FullLoader, that's mean its load and do everything the fi
 >         update: !!python/name:exec
   
 ## Solution - yaml.safe_load()
-While yaml.load() is set its default to FullLoader, **yaml.safe_load()** is set to prevent the code run arbitrary code execution! That's all you need to remember when decide to use yaml load command.
+While yaml.load() is set its default to FullLoader, **yaml.safe_load()** is set to prevent the code run arbitrary code execution! That's all you need to remember when deciding to use yaml load command.
   
 **Another secure function is done!** Secured coding is just a flipped hand when you know the hint!
 
